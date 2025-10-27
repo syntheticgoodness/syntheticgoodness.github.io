@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "Chicago";
+    src: url("ChicagoFLF.ttf"); /* url of the font */
+}
+
+:root {
+    --color-bg: #245695;
+    --color-fg: #da4956;
+    --color-text: #fff;
+}
+
+body {
+    /* background-color: var(--color-bg); */
+    background: #fef3e5;
+    font-family: "Chicago";
+}
+
+button {
+    background: var(--color-fg);
+    color: var(--color-text);
+    font-family: inherit;
+    border: 3px outset var(--color-fg);
+    padding: 12px;
+    /* border-radius: 20px; */
+}
+
+@keyframes glob-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+#glob {
+    width: 200px;
+    animation: glob-animation 0.5s steps(1) infinite;
+}
+#shopping-start {
+    text-align: center;
+    position: fixed;
+    left: 50vw;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+}

@@ -9,10 +9,22 @@
     --color-text: #fff;
 }
 
+@keyframes bg-animation {
+    from {
+        background-position: 0px 0px;
+    }
+    to {
+        background-position: 64px 64px;
+    }
+}
+
 body {
     /* background-color: var(--color-bg); */
-    background: #fef3e5;
+    background-color: #fef3e5;
+    background-image: url("smile_transparent.png");
+    background-size: 64px 64px;
     font-family: "Chicago";
+    animation: bg-animation 1.75s linear infinite;
 }
 
 button {
@@ -36,7 +48,7 @@ button {
     }
 }
 #glob {
-    width: 200px;
+    width: 240px;
     animation: glob-animation 0.5s steps(1) infinite;
 }
 #shopping-start {

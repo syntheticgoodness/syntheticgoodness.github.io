@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- disables accidental zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+            }
+        }
+    </script> -->
+    <script src="game.js"></script>
+</head>
+<body style="background: #000; color: #fff; user-select: none; -webkit-user-select: none;"
+    onload="setScreen('aisle');">
+    
+    <div id="shopping-start">
+        <!-- <div id="loading">
+            Booting GLOB™ ShoppingBot 500...
+            <br />
+            <br />
+            <marquee>..........</marquee>
+        </div> -->
+        <!-- <div id="starting-sequence"></div> -->
+        <!-- <div id="game"></div> -->
+        <div id="game">
+            <p>Welcome to the GLOB™ shopping experience!</p>
+            <img src="#" id="game-panel">
+            <div id="choices">
+                loading...
+            </div>
+        </div>
+    </div>
+    <!-- <div id="controller">
+        <button id="forward" class="control">⇪</button>
+        <button id="left" class="control">↺</button>
+        <button id="right" class="control">↻</button>
+    </div> -->
+</body>
+</html>

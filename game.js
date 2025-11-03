@@ -45,17 +45,17 @@ function setScreen(id) {
 
 async function fadeIn() {
     let game_panel = document.querySelector("#game-panel");
-    for (let i = 0; i <= 1; i += 0.25) {
+    for (let i = 0; i <= 1; i += 0.025) {
         game_panel.style.opacity = i;
-        await delay(200);
+        await delay(20);
     }
 }
 
 async function fadeInDingleDoogle() {
     let game_panel = document.querySelector("#wocaonima");
-    for (let i = 1; i >= 0; i -= 0.25) {
+    for (let i = 1; i >= 0; i -= 0.025) {
         game_panel.style.opacity = i;
         console.log(i)
-        await delay(200);
+        await delay(20);
     }
 }

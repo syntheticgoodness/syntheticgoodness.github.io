@@ -95,3 +95,24 @@ canvas {
 #choices {
     width: calc(100vw - 20px);
 }
+
+#wocaonima {
+    opacity: 0;
+    text-align: center;
+    position: fixed;
+    left: 50vw;
+    top: 50vh;
+    transform: translate(-50%, -60%);
+    width: 100vw;
+    height: 100vh;
+    background: #0000009d;
+    pointer-events: none;
+    touch-action: none;
+}
+#wocaonima div {
+    text-align: center;
+    position: fixed;
+    left: 50vw;
+    top: 50vh;
+    transform: translate(-50%, -60%);
+}

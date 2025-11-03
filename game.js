@@ -33,7 +33,10 @@ function setScreen(id) {
     document.getElementById("choices").innerHTML = SCREENS[id].buttons;
 
     if (id == "take") {
-        setTimeout(() => { setScreen("shelf"); }, 7.87 * 1000);
+        setTimeout(() => {
+            setScreen("shelf");
+            fadeInDingleDoogle();
+        }, 7.87 * 1000);
     }
     else {
         fadeIn();
@@ -44,6 +47,15 @@ async function fadeIn() {
     let game_panel = document.querySelector("#game-panel");
     for (let i = 0; i <= 1; i += 0.25) {
         game_panel.style.opacity = i;
+        await delay(200);
+    }
+}
+
+async function fadeInDingleDoogle() {
+    let game_panel = document.querySelector("#wocaonima");
+    for (let i = 1; i >= 0; i -= 0.25) {
+        game_panel.style.opacity = i;
+        console.log(i)
         await delay(200);
     }
 }
